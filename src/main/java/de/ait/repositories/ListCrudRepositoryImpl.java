@@ -1,4 +1,4 @@
-package de.ait.model.repositories;
+package de.ait.repositories;
 
 import de.ait.model.User;
 

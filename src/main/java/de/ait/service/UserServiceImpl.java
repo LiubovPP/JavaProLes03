@@ -1,19 +1,20 @@
 package de.ait.service;
 
 import de.ait.model.User;
-import de.ait.model.repositories.UserCrudRepository;
-import lombok.AllArgsConstructor;
+import de.ait.repositories.UserCrudRepository;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 import java.util.List;
-@RequiredArgsConstructor
 
 public class UserServiceImpl implements UserService {
 
     private final UserCrudRepository repository;
 
-//    public UserServiceImpl(UserCrudRepository repository) {
-//        this.repository = repository;
+
+
+    public UserServiceImpl(UserCrudRepository repository) {
+       this.repository = repository;
 //    }
     // внедрение зависимостей - Dependency Injection через конструктор или сеттер
     // или inversion of controller через Spring
